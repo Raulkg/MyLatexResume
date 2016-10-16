@@ -1,0 +1,239 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Rahulkumar}{Gaddam}{\href{http://rahulkumar.theh2o.info}{Portfolio: Rahulkumar.theh2o.info} \\
+\href{mailto:rgaddam@syr.edu}{rgaddam@syr.edu} | 315.420.7439
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{Syracuse University}
+\location{Masters in Computer Science}
+\location{Expected Dec 2016 | Syracuse, NY \\ Cum. GPA: 3.4}
+\sectionsep
+
+\subsection{Osmania University}
+\location{Bachelors in Information Technology }
+\location{Grad Jun 2011 | Hyderabad, India}
+Placement Co-Ordinator \\
+\location{ Cum. GPA: 3.70 / 4.0
+}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:// \href{https://github.com/Raulkg}{\custombold{raulkg}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/rahulkumargaddam}{\custombold{rahulkumargaddam}} \\
+Twitter://  \href{https://twitter.com/Raulmeek}{\custombold{@Raulmeek}} \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Object Oriented Programming \\
+Design Patterns \\
+Design and Analysis of Algorithms \\
+Data Structure\\
+Cloud Computing \\
+Principles of Operating Systems \\
+Computer Architecture\\
+Software Engineering \\
+Android Programming\\
+Mobile Application Programming \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\location{Languages:}
+C, C++, C\#, Java, Android Programming, PL SQL, Python \\
+\location{J2EE Technologies:}
+Hibernate, Spring, Struts, JDBC, SOAP and REST services \\
+\location{UI/Web Technologies:}
+HTML5, JSP,XHTML, CSS3, XML, PHP, ASP.NET ,JavaScript ,JQuery\\
+\location{Databases:}
+MySQL, PostgreSQL, Oracle 9i / 10g / 11g, Mongo DB \\
+\location{Build Tools ,IDE  \& Source Control:}
+Android Studio , Eclipse, Net Beans ,Git , SVN, Subversion, Gradle, Bitbucket, Ant, Maven ,Jira, Eclipse, IntelliJ \\
+\location{Application and Web Servers:}
+Oracle WebLogic, Apache Tomcat, JBOSS\\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Euphony Inc}
+\descript{| Mobile Application Developer Intern}
+\location{Expected Mar 2016 – Dec 2016 | Syracuse, NY}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Built an Android app for text to speech synthesis with ability to control speed, pitch and emotion.
+\item Developed IOS version of the Application with Crashlytics integration .
+\item Developed Web Application using NodeJS and AngularJS with text to speech Synthesis ability hosted on Amazon AWS server using S3 and EC2 services.
+
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Syracuse University}
+\descript{| Web Developer }
+\location{May 2015 – Mar 2016 | Syracuse, NY}
+\begin{tightemize}
+\item Worked on the YouTube Captions in primarily vanilla Javascript and Python to plan, design and develop the full stack implementation of crowd sourced caption editing tool with social API  integration.
+\item Created a Wordpress plugin for collecting excerpts from all posts to form a Newsletter Page in PHP.
+
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Accenture Pvt Ltd}
+\descript{| Software Engineer}
+\location{Jun 2011 – Dec 2014 | Hyderabad, India}
+\begin{tightemize}
+\item Experience in all phases of SDLC across various workflows in Web \& Client/Server application development in AGILE environment.
+\item Extensive experience in various Java/J2EE technologies including Core Java, J2EE , Spring, Hibernate andJavaWeb Framework along with Web Services (SOAP, RESTful) , .Net Programming and Database related technologies
+\item Developed SQL Objects using T-SQL Statement, Views and User Defined Functions, Stored Procedures and Triggers.
+\item Developed Insurance application using ASP.NET 4.0 and HTML, CSS and Java script for responsive design.
+
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\runsubsection{Syracuse University}
+\descript{| Research Assistant Developer}
+\location{Jan 2015 – Jan 2016 | Syracuse, NY}
+\begin{tightemize}
+\item Worked with Prof.Yun Huang to create, a tool which fixes the unaccessible parts of the web applicaiton.
+\item Worked on a topic - Community Evolution detection by analyzing large datasets using python - NetworkX
+\end{tightemize}
+
+
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+
+ \runsubsection{ MedAssist}\location{ | Android Studio, GenyMotion, Firebase }
+
+ Android App for personal medication management. \\
+  \runsubsection{ File Catalogue \& XML Document}\location{ | C++, Visual Studio }
+
+Constructed a catalog of all files in the file set, saving each file name only once and saving each path only once, while preserving all of the containment relationships between directories and their files. \\
+ \runsubsection{ Sports Tracker}\location{ | Java, AWS Cloud Services }
+Developed a web Application to retrieve latest sports event score from restful API and process using AWS web Services.
+ \\
+ \runsubsection{ Image Recognition}\location{ |  Python  }
+ Image recognition using machine learning algorithms and methods.Used SIFT algorithm to extract features from images and K-means for clustering and used SVM and Neural networks to train classifier. \\
+
+
+\sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
